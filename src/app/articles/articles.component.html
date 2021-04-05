@@ -1,12 +1,15 @@
 
-
+<div id="globalGlobalContainer">
+  <div id="GreekParallax"></div>
+<app-messages *ngIf="Message"></app-messages>
 <div id="globalContainer">
   
   <div id="header">
     <nav>
       <a routerLink="/dashboard">Dashboard</a>
       <a routerLink="/articles" (click)="inversLogin()">Add a new Article</a>
-      <a routerLink="/login">Logout</a>
+      <a routerLink="/familyTree">Family Tree</a>
+      <a routerLink="/shop">Shop</a>
     </nav>
   </div>
   <div id="animation">
@@ -138,7 +141,8 @@
   </div>
 </div>
 </div>
+<div id="GreekParallax"></div>
+</div>
 
-<app-messages *ngIf="Message"></app-messages>
 
 
