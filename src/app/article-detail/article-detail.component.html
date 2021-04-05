@@ -17,20 +17,19 @@
       <div id="title">{{article.title}}</div>
       <div id="content">
       <img id="image" src="{{article.imageUrl}}" alt="{{article.name}} image failed to load : {{article.imageUrl}} "/>
-      {{article.description}}</div><br>
+      {{article.description}}</div>
       <div id="writeBy">Write by {{article.author}}</div>
 
       <div id="containerUpdate">
-        Modify the Content ? <input type="checkbox" (click)="modifyDisplay()"/> <br>
+        Modify the Content ? <input type="checkbox" (click)="modifyDisplay()"/>
         <div *ngIf="displayUpdate" ><br>
           Copy paste your Update here, or change it in direct right now :<br>
           NB: Don't forget to Save.
           <textarea id="modifier"  [(ngModel)]="article.description"></textarea><br>
           <button (click)="save()">save</button>
         </div>
-      </div><br>
+      </div>
     </div>
-   
 </div>
 
 <app-messages></app-messages>
