@@ -3,22 +3,22 @@
 <div id="globalContainer">
 <div id="header">
     <nav>
-      <a routerLink="/dashboard">Dashboard</a>
-      <a routerLink="/articles">Myth Classed</a>
-      <a routerLink="/familyTree">Family Tree</a>
-      <a routerLink="/galery">Galery</a>
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/articles">Myth Classed</a>
+        <a routerLink="/familyTree">Family Tree</a>
+        <a routerLink="/galery">Galery</a>
     </nav>
 </div>
 <div id="animation">
 <div id="container">
     
-    <h2>Newest Myth Articles</h2>
+    <h2>Myth Galery</h2>
     <div class="articles-menu">
         <a *ngFor="let article of articles" routerLink="/detail/{{article.id}}">
-            {{article.name}}
+            <img id="imageGalery" src="{{article.imageUrl}}"/>
         </a>
     </div>
-    <app-article-search></app-article-search>
+
 
 </div>
 

@@ -1,4 +1,6 @@
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
 <div id="globalGlobalContainer">
   <div id="GreekParallax"></div>
 <app-messages *ngIf="Message"></app-messages>
@@ -9,31 +11,47 @@
       <a routerLink="/dashboard">Dashboard</a>
       <a routerLink="/articles" (click)="inversLogin()">Add a new Article</a>
       <a routerLink="/familyTree">Family Tree</a>
-      <a routerLink="/shop">Shop</a>
+      <a routerLink="/galery">Galery</a>
     </nav>
   </div>
   <div id="animation">
   <div id="container0">
   <app-article-search *ngIf="!LoginMode" (click)="function()"></app-article-search>
+  
   <div id="container-1" *ngIf="LoginMode">
+    <form>
     <br>
+
+
+
+
     <label id="new-hero">Name of the Myth: </label>
-    <input for="new-hero" #articleName/><br>
+    <input for="new-hero" #articleName /><br>
     <label id="new-hero">Myth Title / HeadLine </label>
-    <input for="new-hero" #articleTitle/><br>
+    <input for="new-hero" #articleTitle /><br>
     <label id="new-hero">Content of the Myth </label>
     <input for="new-hero" #articleDescription/><br>
-    <label id="new-hero">Select a Category </label>
-    <input for="new-hero" #articleType/><br>
+    <label id="new-hero">Select a Category </label><br>
+    <select for="new-hero" #articleType>
+      <option value="God">Olympian God</option>
+      <option value="Titan">Titan</option>
+      <option value="MinorGod">Minor God</option>
+      <option value="Monster">Monster</option>
+      <option value="Hero">Hero</option>
+      <option value="Other">Other</option>
+    </select><br><br>
     <label id="new-hero" >Url of an Image (optional)</label>
-    <input for="new-hero" #articleImageUrl #articleAuthor/> or <input type="file"/><br>
+    <input for="new-hero" #articleImageUrl #articleAuthor/> <br>
   
     <!-- (click) passes input value to add() and then clears the input -->
-    <button type="submit" class="add-button" (click)="add(articleName.value,articleTitle.value,articleDescription.value,articleType.value, articleImageUrl.value, articleAuthor.value); articleName.value=''; articleDescription.value=''; articleTitle.value=''; articleType.value=''; articleImageUrl.value='';">
-      Share this brand new Article !
+    <button type="submit" class="add-button" ng-if=""(click)="add(articleName.value,articleTitle.value,articleDescription.value,articleType.value, articleImageUrl.value, articleAuthor.value); articleName.value=''; articleDescription.value=''; articleTitle.value=''; articleType.value=''; articleImageUrl.value='';" >
+      Share this brand new Article ! 
     </button>
+    <span style="color:red; padding-left: 10px;">Every field are required, either way the article won't be saved</span>
     <br><br>
+    </form>
   </div>
+
 </div>
 <br><br>
 

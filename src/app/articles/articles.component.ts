@@ -16,6 +16,8 @@ export class ArticlesComponent implements OnInit {
   AdminMode = true;
   LoginMode = false;
   Message = false;
+
+
   //articles: Article[] = [];
   //articles: Article[] = [];
   articles!: Article[];
@@ -49,8 +51,8 @@ export class ArticlesComponent implements OnInit {
     imageUrl = imageUrl.trim();
     author = author.trim();
 
-    if (!name || !description || !type || !title || (!imageUrl) ) { 
-      return; }
+    /*if (!name || !description || !type || !title || (!imageUrl) ) { 
+      return; }*/
     this.articleService.addArticle({ name, description, type, title, imageUrl, author } as Article)
       .subscribe(article => {
         this.articles.push(article);

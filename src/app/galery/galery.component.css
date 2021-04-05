@@ -1,5 +1,5 @@
 #globalGlobalContainer {
-  height: 270%;
+  height: 370%;
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -25,19 +25,22 @@
 #globalContainer {
   position: absolute;
   top: 20%;
-  width: 100%;
+  width: 99%;
 }
 
 #animation {
   opacity: 0;
-  animation: fadeIn 1s forwards 0.5s;
+  animation: fadeIn 1s forwards;
 }
 
 /* DashboardComponent's private CSS styles */
 #container {
   position: relative;
-  width: 100%;
+  background: #fcd5ce;
+  width: 60%;
   margin: 0 auto;
+  border: solid 5px white;
+  border-radius: 4px;
 }
 
 #header {
@@ -116,6 +119,11 @@ a {
 
 @media (min-width: 600px) {
   a {
+    width: 28%;
+    box-sizing: content-box;
+  }
+
+  nav a {
     width: 18%;
     box-sizing: content-box;
   }
@@ -135,10 +143,6 @@ a {
   }
 }
 
-#familyTree {
-  position: relative;
-  width: 55%;
-  left: 22.5%;
-  border: solid 5px white;
-  border-radius: 5px;
+#imageGalery {
+  width: 100%;
 }

@@ -4,7 +4,7 @@ import { DashboardComponent} from './dashboard/dashboard.component';
 import { ArticlesComponent} from './articles/articles.component';
 import { ArticleDetailComponent} from './article-detail/article-detail.component';
 import { FamilyTreeComponent } from './family-tree/family-tree.component';
-import { ShopComponent } from './shop/shop.component';
+import { GaleryComponent } from './galery/galery.component';
 
 
 
@@ -14,8 +14,7 @@ const routes: Routes = [
   {path: 'articles', component:ArticlesComponent},
   {path: 'detail/:id', component:ArticleDetailComponent},
   {path: 'familyTree', component:FamilyTreeComponent},
-  {path: 'shop', component:ShopComponent},
-
+  {path: 'galery', component:GaleryComponent},
 ];
 
 @NgModule({

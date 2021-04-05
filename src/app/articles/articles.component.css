@@ -1,5 +1,5 @@
 #globalGlobalContainer {
-  height: 130%;
+  height: 150%;
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -29,7 +29,7 @@
 }
 #animation {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fadeIn 1s forwards 0.5s;
 }
 #header {
   position: relative;
@@ -166,6 +166,13 @@ nav a.active {
 
 input {
   display: block;
+  width: 50%;
+  padding: 0.2rem;
+  margin: 0.1rem 0;
+  box-sizing: border-box;
+}
+
+select {
   width: 50%;
   padding: 0.2rem;
   margin: 0.1rem 0;

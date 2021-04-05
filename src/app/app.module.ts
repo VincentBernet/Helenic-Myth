@@ -1,7 +1,8 @@
 // Basic Imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule,ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
+
 
 // Imports of all of our component
 import { AppRoutingModule } from './app-routing.module';
@@ -14,7 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { ArticleSearchComponent } from './article-search/article-search.component';
 import { FamilyTreeComponent } from './family-tree/family-tree.component';
-import { ShopComponent } from './shop/shop.component';
+import { GaleryComponent } from './galery/galery.component';
 
 // Imports to http request
 import { HttpClientModule } from '@angular/common/http';
@@ -31,12 +32,13 @@ import { InMemoryDataService } from './in-memory-data.service';
     DashboardComponent,
     ArticleSearchComponent,
     FamilyTreeComponent,
-    ShopComponent,
+    GaleryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule, 
+    ReactiveFormsModule,
     HttpClientModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
