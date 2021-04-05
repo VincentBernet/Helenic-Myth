@@ -6,7 +6,7 @@
     <a routerLink="/dashboard">Dashboard</a>
     <a routerLink="/articles">Myth Classed</a>
     <a routerLink="/familyTree">Family Tree</a>
-    <a routerLink="/galery">Galery</a>
+    <a routerLink="/galery">Gallery</a>
   </nav>
   </div>
 
@@ -18,7 +18,7 @@
       <div id="content">
       <img id="image" src="{{article.imageUrl}}" alt="{{article.name}} image failed to load : {{article.imageUrl}} "/>
       {{article.description}}</div>
-      <div id="writeBy">Write by {{article.author}}</div>
+      <div id="writeBy">Written by {{article.author}}</div>
 
       <div id="containerUpdate">
         Modify the Content ? <input type="checkbox" (click)="modifyDisplay()"/>
@@ -26,7 +26,7 @@
           Copy paste your Update here, or change it in direct right now :<br>
           NB: Don't forget to Save.
           <textarea id="modifier"  [(ngModel)]="article.description"></textarea><br>
-          <button (click)="save()">save</button>
+          <button (click)="save()">Save</button>
         </div>
       </div>
     </div>
