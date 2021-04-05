@@ -1,0 +1,144 @@
+
+
+<div id="globalContainer">
+  
+  <div id="header">
+    <nav>
+      <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/articles" (click)="inversLogin()">Add a new Article</a>
+      <a routerLink="/login">Logout</a>
+    </nav>
+  </div>
+  <div id="animation">
+  <div id="container0">
+  <app-article-search *ngIf="!LoginMode" (click)="function()"></app-article-search>
+  <div id="container-1" *ngIf="LoginMode">
+    <br>
+    <label id="new-hero">Name of the Myth: </label>
+    <input for="new-hero" #articleName/><br>
+    <label id="new-hero">Myth Title / HeadLine </label>
+    <input for="new-hero" #articleTitle/><br>
+    <label id="new-hero">Content of the Myth </label>
+    <input for="new-hero" #articleDescription/><br>
+    <label id="new-hero">Select a Category </label>
+    <input for="new-hero" #articleType/><br>
+    <label id="new-hero" >Url of an Image (optional)</label>
+    <input for="new-hero" #articleImageUrl #articleAuthor/> or <input type="file"/><br>
+  
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button type="submit" class="add-button" (click)="add(articleName.value,articleTitle.value,articleDescription.value,articleType.value, articleImageUrl.value, articleAuthor.value); articleName.value=''; articleDescription.value=''; articleTitle.value=''; articleType.value=''; articleImageUrl.value='';">
+      Share this brand new Article !
+    </button>
+    <br><br>
+  </div>
+</div>
+<br><br>
+
+<div id="container1">
+  <br>
+  <div class="headerContainer" >
+    Olympians God's Article Available
+  </div>
+  
+  <div class="articles">
+    <ul class="ListMonster">
+      <br>
+      <li *ngFor="let article of filterType('God'); index as i;"  routerLink="/detail/{{article.id}}">
+        <span class="badge">{{i+1}}</span> <span style="font-size: larger; font-weight: 400;">{{article.name}}</span> | <span style="font-size: smaller;">{{article.author}}</span>
+        <button class="delete" title="delete article" *ngIf="AdminMode"
+          (click)="delete(article)">x</button> 
+      </li>
+    </ul>
+  <br>
+  </div>
+</div>
+<br><br><br><br>
+
+<div id="containerMonsterHero">
+<div id="container2">
+  <br>
+  <div class="headerContainer">
+    Titan's
+  </div>
+  
+  <div class="articlesMini">
+    <ul class="ListMonster">
+      <br>
+      <li *ngFor="let article of filterType('Titan'); index as i;"  routerLink="/detail/{{article.id}}">
+        <span class="badge">{{i+1}}</span> <span style="font-size: larger; font-weight: 400;">{{article.name}}</span> | <span style="font-size: smaller;">{{article.author}}</span>
+        <button class="delete" title="delete article" *ngIf="AdminMode"
+          (click)="delete(article)">x</button> 
+      </li>
+    </ul>
+  <br>
+  </div>
+</div>
+
+
+<div id="container3">
+  <br>
+  <div class="headerContainer">
+    Minor God's
+  </div>
+  
+  <div class="articlesMini">
+    <ul class="ListStory">
+      <br>
+      <li *ngFor="let article of filterType('MinorGod'); index as i;"  routerLink="/detail/{{article.id}}">
+          <span class="badge">{{i+1}}</span> <span style="font-size: larger; font-weight: 400;">{{article.name}}</span> | <span style="font-size: smaller;">{{article.author}}</span>
+          <button class="delete" title="delete article" *ngIf="AdminMode"
+          (click)="delete(article)">x</button>     
+        </li>
+    </ul>
+  <br>
+  </div>
+</div>
+</div>
+<br><br><br>
+
+<div id="containerMonsterHero">
+  <div id="container4">
+    <br>
+    <div class="headerContainer">
+      Hero's
+    </div>
+    
+    <div class="articlesMini">
+      <ul class="ListMonster">
+        <br>
+        <li *ngFor="let article of filterType('Hero'); index as i;"  routerLink="/detail/{{article.id}}">
+          <span class="badge">{{i+1}}</span> <span style="font-size: larger; font-weight: 400;">{{article.name}}</span> | <span style="font-size: smaller;">{{article.author}}</span>
+          <button class="delete" title="delete article" *ngIf="AdminMode"
+            (click)="delete(article)">x</button> 
+        </li>
+      </ul>
+    <br>
+    </div>
+  </div>
+  
+  
+  <div id="container5">
+    <br>
+    <div class="headerContainer">
+      Monster's
+    </div>
+    
+    <div class="articlesMini">
+      <ul class="ListStory">
+        <br>
+        <li *ngFor="let article of filterType('Monster'); index as i;"  routerLink="/detail/{{article.id}}">
+            <span class="badge">{{i+1}}</span> <span style="font-size: larger; font-weight: 400;">{{article.name}}</span> | <span style="font-size: smaller;">{{article.author}}</span>
+            <button class="delete" title="delete article" *ngIf="AdminMode"
+            (click)="delete(article)">x</button>     
+          </li>
+      </ul>
+    <br>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<app-messages *ngIf="Message"></app-messages>
+
+

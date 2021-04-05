@@ -1,0 +1,138 @@
+#globalContainer {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+
+#header {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 0.5%;
+}
+nav {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+nav a {
+  padding: 1rem;
+  min-width: fit-content;
+  background-color: #3f525c;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 4px;
+  margin-bottom: 2%;
+}
+nav a:hover {
+  background-color: #fcd5ce;
+  border: solid 2px white;
+}
+nav a.active {
+  background-color: black;
+}
+
+#container {
+  position: relative;
+  width: 60%;
+  min-height: 800px;
+  margin: 0 auto;
+  background-image: url(../../assets/images/marbre.jpg);
+  border: solid 3px black;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+#content {
+  padding: 5%;
+  text-align: justify;
+  height: 100%;
+}
+
+#name {
+  font-size: xx-large;
+  font-weight: 500;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#title {
+  font-weight: 600;
+  font-size: x-large;
+  text-align: center;
+  font-style: italic;
+}
+
+#image {
+  border: solid 2px black;
+  width: 26%;
+  height: auto;
+  float: left;
+  margin: 5px;
+  margin-right: 2%;
+}
+
+#writeBy {
+  font-style: italic;
+  font-weight: 550;
+  text-align: right;
+  padding-right: 5%;
+}
+
+a {
+  background-color: #3f525c;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: 0.5rem auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+@media (min-width: 600px) {
+  a {
+    width: 18%;
+    box-sizing: content-box;
+  }
+}
+
+#containerUpdate {
+  position: relative;
+  padding-top: 5%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+}
+
+#modifier {
+  background: #f9dcc4;
+  border: solid 2px black;
+  width: 90%;
+  height: 100px;
+}
+
+@keyframes fadeIn {
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

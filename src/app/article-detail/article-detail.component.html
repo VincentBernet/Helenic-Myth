@@ -1,0 +1,33 @@
+<div id="globalContainer">
+<div id="header">
+  <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/articles">Myth Classed</a>
+    <a routerLink="/login">Logout</a>
+  </nav>
+  </div>
+
+    
+    <div id="container" *ngIf="article">
+
+      <div id="name">The myth behind : <span style="font-weight: 600;">{{article.name }}</span></div>
+      <div id="title">{{article.title}}</div>
+      <div id="content">
+      <img id="image" src="{{article.imageUrl}}" alt="{{article.name}} image failed to load : {{article.imageUrl}} "/>
+      {{article.description}}</div><br>
+      <div id="writeBy">Write by {{article.author}}</div>
+
+      <div id="containerUpdate">
+        Modify the Content ? <input type="checkbox" (click)="modifyDisplay()"/> <br>
+        <div *ngIf="displayUpdate" ><br>
+          Copy paste your Update here, or change it in direct right now :<br>
+          NB: Don't forget to Save.
+          <textarea id="modifier"  [(ngModel)]="article.description"></textarea><br>
+          <button (click)="save()">save</button>
+        </div>
+      </div><br>
+    </div>
+   
+</div>
+
+<app-messages></app-messages>
