@@ -337,3 +337,18 @@ button.delete:hover {
     opacity: 1;
   }
 }
+
+#dontFind {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#noCss {
+  color: #7b5a55;
+  font-weight: 600;
+}
+
+#noCss:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
