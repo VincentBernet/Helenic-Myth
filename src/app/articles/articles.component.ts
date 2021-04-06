@@ -42,7 +42,7 @@ export class ArticlesComponent implements OnInit {
     this.location.back();
   }
 
-  add(name: string, description: string, title: string, type: string,  imageUrl: string, author: string): void {
+  add(name: string, title: string, description: string,  type: string,  imageUrl: string, author: string): void {
     this.Message = true;
     name = name.trim();
     description = description.trim();

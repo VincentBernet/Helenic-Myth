@@ -39,8 +39,9 @@
       <option value="Other">Other</option>
     </select><br><br>
     <label id="new-hero" >Url of an Image (optional)</label>
-    <input for="new-hero" #articleImageUrl #articleAuthor/> <br>
-  
+    <input for="new-hero" #articleImageUrl /> <br>
+    <label id="new-hero" >Author / Sign your Article</label>
+    <input for="new-hero" #articleAuthor /> 
     <!-- (click) passes input value to add() and then clears the input -->
     <button type="submit" class="add-button" ng-if=""(click)="add(articleName.value,articleTitle.value,articleDescription.value,articleType.value, articleImageUrl.value, articleAuthor.value); articleName.value=''; articleDescription.value=''; articleTitle.value=''; articleType.value=''; articleImageUrl.value='';" >
       Share this brand new Article ! 
