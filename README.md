@@ -9,7 +9,7 @@ Find it just here : https://helenic-myth.netlify.app/
 
 ## Installation
 It's already online if you wanna check-it out, but if you want to use the code then follow the following instructions. 
-Simply download the whole project, then set up your envirnment for Angular if you haven't done it yet (you need to have Node.js installed and npm package manager):
+Simply download the whole project, then set up your environment for Angular if you haven't done it yet (you need to have Node.js installed and npm package manager) :
  ```
 - npm install -g @angular/cli
  ```
@@ -20,7 +20,7 @@ Then in the directory where you put the project, use the following command to st
 
 
 ## Features
-On this application, i implemetended multiples features such as :
+On this application there are multiples features implemetended such as :
  - Creation of an article, with FormControl on Angular
  - Deletion and update of those article
  - Display those article in multiple way (by type or categorie, by creation chronologie, by Gallery Art)
