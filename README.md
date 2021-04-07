@@ -3,12 +3,14 @@
 *** Project Presentation  ***
 
 This website is build to permit people to share their passion about greek mythologie, in this objectiv we create a CMS and CRUD website where you can share articles about your favorite greek myth !
+Built in Angular 10 !
 
-<p align="center"><img src="Tirico_Client/ressource/image/interface.JPG"\></p>
+Find it just here : https://helenic-myth.netlify.app/
+<p align="center"><img src="src/assets/read-me/detail.PNG"\></p>
 
 
-## Demo of the tracker on Persons in the street
-<p align="center"><img src="Tirico_Server/code_python/yolov4-deepsort/data/helpers/demo.gif"\></p>
+## Demo of the WebSite
+<p align="center"><img src="src/assets/read-me/detail.PNG"\></p>
 ---
 
 ## Table of Contents 
