@@ -9,7 +9,11 @@ Find it just here : https://helenic-myth.netlify.app/
 
 ## Installation
 It's already online if you wanna check-it out, but if you want to use the code then follow those instrucitons :
-Simply download the whole project, then 
+Simply download the whole project, then set up your envirnment for Angular (you need to have Node.js installed and npm package manager):
+- npm install -g @angular/cli
+Then in the directory where you put the project, use the following command to start :
+- ng serve --open
+
 
 
 ## Features
