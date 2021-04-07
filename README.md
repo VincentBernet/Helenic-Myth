@@ -14,10 +14,10 @@ Simply download the whole project, then
 
 ## Features
 On this application, i implemetended multiples features such as :
- - Creation of an article, with form controle on Angular 10
+ - Creation of an article, with FormControl on Angular
  - Deletion and update of those article
  - Display those article in multiple way (by type or categorie, by creation chronologie, by Gallery Art)
- - Search Bar
+ - Search Bar to find Article
 
 
 ## Contact
