@@ -22,7 +22,7 @@ Find it just here : https://helenic-myth.netlify.app/
 ---
 
 ## Installation
-
+It's already online if you wanna check-it out, but if you want to use the code then follow those instrucitons :
 Simply download the whole project, then 
 
 
