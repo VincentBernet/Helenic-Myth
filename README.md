@@ -23,12 +23,12 @@ Then in the directory where you put the project, use the following command to st
 On this application there are multiples features implemetended such as :
  - Creation of an article, with FormControl on Angular
  - Deletion and update of those article
- - Display those article in multiple way (by type or categorie, by creation chronologie, by Gallery Art)
+ - Display those article in multiple way (by type or category, by creation chronology, by Gallery Art)
  - Search Bar to find Article
 
 
 ## Contact
-- Don't hesitate to reach me on github or Linkedin !
+- Don't hesitate to reach me on Github or Linkedin !
 
 
 
