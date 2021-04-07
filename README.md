@@ -10,7 +10,7 @@ Find it just here : https://helenic-myth.netlify.app/
 
 
 ## Demo of the WebSite
-<p align="center"><img src="src/assets/read-me/Detail.PNG"\></p>
+<p align="center">Need to Make a quick Gif of the Website Navigation</p>
 ---
 
 ## Table of Contents 
