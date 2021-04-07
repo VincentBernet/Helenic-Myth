@@ -1,6 +1,5 @@
 # Helenic-Myth
 
-*** Project Presentation  ***
 
 This website is build to permit people to share their passion about greek mythologie, in this objectiv we create a CMS and CRUD website where you can share articles about your favorite greek myth !
 Built in Angular 10 !
