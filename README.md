@@ -13,7 +13,7 @@ Simply download the whole project, then set up your envirnment for Angular if yo
  ```
 - npm install -g @angular/cli
  ```
-Then in the directory where you put the project, use the following command to start :
+Then in the directory where you put the project, use the following command to start, it will open a new page with the website on your broswer :
  ```
 - ng serve --open
  ```
