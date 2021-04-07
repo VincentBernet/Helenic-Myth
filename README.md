@@ -8,10 +8,6 @@ Find it just here : https://helenic-myth.netlify.app/
 <p align="center"><img src="src/assets/read-me/Detail.PNG"\></p>
 
 
-## Demo of the WebSite
-<p align="center">Need to Make a quick Gif of the Website Navigation</p>
----
-
 ## Table of Contents 
 
 - [Installation](#installation)
