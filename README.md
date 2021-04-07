@@ -7,15 +7,6 @@ Built in Angular 10 !
 Find it just here : https://helenic-myth.netlify.app/
 <p align="center"><img src="src/assets/read-me/Detail.PNG"\></p>
 
-
-## Table of Contents 
-
-- [Installation](#installation)
-- [Features](#features)
-- [Contact](#Contact)
-
----
-
 ## Installation
 It's already online if you wanna check-it out, but if you want to use the code then follow those instrucitons :
 Simply download the whole project, then 
