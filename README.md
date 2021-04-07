@@ -17,67 +17,25 @@ Find it just here : https://helenic-myth.netlify.app/
 
 - [Installation](#installation)
 - [Features](#features)
-- [Team](#team)
 - [Contact](#Contact)
-- [Licences](#Licences)
 
 ---
 
 ## Installation
 
- Dans votre dossier d'installation, créez votre git et connectez le à ce repository : 
-```
-git init
-git remote add origin https://github.com/VincentBernet/Tirico-ShopCameraAnalitics
-git pull origin master
-```
- 
- Pour ensuite installer tous les composants nécessaires à l'application :
-```
-npm install
-Installer dans Tirico_Server/code_python/data le fichier suivant : https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT (yolov4.weights)
-```
+Simply download the whole project, then 
 
-Pour lancer l'application :
-```
-npm start
-```
- 
-Pour le python ~~(pas nécessaire actuellement, les graphes sont en locales)~~  
-Installer pip ou anaconda pour installer plus facilement les librairies :
-
-```
-pip install pandas                         (pour réaliser les graphes)
-pip install plotly                         (pour réaliser les graphes)
-pip install -c plotly plotly-orca          (pour save en png les graphes)
-pip install seaborn                        (pour réaliser la HeatMap)
-```
-
-## Licences
 
 ## Features
-On this application we implemetended multiples features such as :
- - Login/Register/Logout to acces at your account and your own shops's analytics.
- - Multiple analytics such as heatmap, client flow etc .
- 
-
-## Team
-
-> This whole application is made by 8 students during their cursus in software Engenering at EFREI PARIS :
-
-
+On this application, i implemetended multiples features such as :
+ - Creation of an article, with form controle on Angular 10
+ - Deletion and update of those article
+ - Display those article in multiple way (by type or categorie, by creation chronologie, by Gallery Art)
+ - Search Bar
 
 
 ## Contact
-- Don't hesitate to contact us on Github or on Linkedin :
+- Don't hesitate to reach me on github or Linkedin !
 
 
-
-
-## Licences
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2021 © <a href="https://www.linkedin.com/in/vincent-bernet-028a64193/" target="_blank">Tirico's Team</a>.
 
