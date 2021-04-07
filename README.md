@@ -6,11 +6,11 @@ This website is build to permit people to share their passion about greek mythol
 Built in Angular 10 !
 
 Find it just here : https://helenic-myth.netlify.app/
-<p align="center"><img src="src/assets/read-me/detail.PNG"\></p>
+<p align="center"><img src="src/assets/read-me/Detail.PNG"\></p>
 
 
 ## Demo of the WebSite
-<p align="center"><img src="src/assets/read-me/detail.PNG"\></p>
+<p align="center"><img src="src/assets/read-me/Detail.PNG"\></p>
 ---
 
 ## Table of Contents 
